@@ -1,0 +1,28 @@
+- name: 码志
+  url: http://mazhuang.org
+  src: life
+
+- name: HyG
+  url: https://gaohaoyang.github.io/
+  src: life
+
+- name: NexT
+  url: https://simpleyyt.com
+  src: life
+
+- name: 小胖轩
+  url: https://www.codeboy.me/
+  src: life
+
+- name: 黄玄的博客
+  url: https://huangxuan.me/
+  src: life
+
+- name: 简洁明快的Jekyll模板
+  url: https://www.zhihu.com/question/20223939
+  src: life
+
+- name: Jekyll
+  url: https://jekyllrb.com/docs/liquid/filters/ 
+  src: life
+  
