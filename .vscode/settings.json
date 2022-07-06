@@ -22,6 +22,6 @@
     "Gemfile": true,
     "Gemfile.lock": true,
     // "run.sh": true,
+    // "test.sh": true,
   },
-
 }

@@ -5,3 +5,5 @@ _site
 .idea
 .DS_Store
 Gemfile.lock
+test.sh
+

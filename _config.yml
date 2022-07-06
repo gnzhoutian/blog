@@ -58,6 +58,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - run.sh
+  - test.sh
   
 include:
   - haha

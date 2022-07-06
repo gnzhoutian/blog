@@ -3,7 +3,7 @@ layout: post
 title:  "对这个 jekyll 博客主题的改版和重构"
 date:   2016-03-12 11:40:18 +0800
 categories: jekyll
-tags: jekyll 端口 markdown Foxit RubyGems HTML CSS 这个见解高雅的博客主题收到了很多朋友的喜欢，在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不是很熟悉 haha
+tags: jekyll 端口 markdown Foxit RubyGems HTML CSS
 author: Haoyang Gao
 comments: true
 ---
