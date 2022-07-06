@@ -7,28 +7,42 @@
 
 ## 1. 概述
 
-  博客主题基于[HyG](https://github.com/Gaohaoyang/gaohaoyang.github.io)设计修改，本仓库欢迎`clone` `download` 或 `fork`
+  博客主题基于[`HyG Blog`](https://github.com/Gaohaoyang/gaohaoyang.github.io)设计修改，本仓库欢迎`clone` `download` 或 `fork`
+
+
 
 ## 2. 技术栈
 
   `Jekyll`  `Liquid`  `Markdown`  `Yaml`  `html`  `js`  `css`
 
+
+
 ## 3. 特性
   `最近提交`  `分类`  `标签`  `搜索`  `快捷搜索(双击Ctrl)`
+
   `代码高亮`  `jemoji`  `mathjax`
+
   `移动端适配`  `离线运行`  `订阅支持`
+
   `Disqus评论`  `百度统计`  `Google分析`  `阅读量统计`  
+
+
 
 ## 4. 依赖
 
   - [`github-pages v226`](https://github.com/github/pages-gem/releases/tag/v226)
   - [`jekyll v3.9.2`](https://jekyllrb.com/docs/)
 
+
+
 ## 5. 代办
 
   - N/A
 
+
+
 ## 6. 使用说明
+
 ### 1. 环境初始化
 ```shell
 # 1. 安装 ruby for ubuntu
@@ -144,6 +158,8 @@
 
 ```
 
+
+
 ## 7. 致谢
 
 | 序号 | 站点                                                        | 描述                 |
@@ -160,3 +176,4 @@
 | 2    | [Liquid](https://jekyllrb.com/docs/liquid/filters/)          | Liquid选择器帮助文档   |
 | 3    | [Jekyll](https://jekyllrb.com/docs/)                         | Jekyll官方帮助文档    |
 | 4    | [Code Beautify](https://codebeautify.org/)                   | 前端工具箱            |
+
