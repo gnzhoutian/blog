@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 收藏夹
+title: Collections
 permalink: /collection/
 comments: true
 ---

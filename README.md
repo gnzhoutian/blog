@@ -13,18 +13,20 @@
 
 ## 2. 技术栈
 
-  `Jekyll`  `Liquid`  `Markdown`  `Yaml`  `html`  `js`  `css`
+  `Jekyll` `Liquid` `Markdown` `Yaml` `html` `js` `css`
 
 
 
 ## 3. 特性
-  `最近提交`  `分类`  `标签`  `搜索`  `快捷搜索(双击Ctrl)`
+  `最近提交` `文章摘要` `分类` `标签`
 
-  `代码高亮`  `jemoji`  `mathjax`
+  `搜索` `快捷搜索(双击Ctrl)`
 
-  `移动端适配`  `离线运行`  `订阅支持`
+  `代码高亮` `jemoji` `mathjax`
 
-  `Disqus评论`  `百度统计`  `Google分析`  `阅读量统计`  
+  `移动端适配` `离线运行` `订阅支持`
+
+  `Disqus评论` `百度统计` `Google分析` `阅读量统计`
 
 
 
@@ -46,7 +48,7 @@
 ### 1. 环境初始化
 ```shell
 # 1. 安装 ruby for ubuntu
-    apt update 
+    apt update
     apt-get install ruby-full build-essential zlib1g-dev
 
 # 2. RubyGems 切换国内镜像
@@ -67,7 +69,9 @@
     bundle install -V
 
 # 6. 启动站点
+    # IP/PORT 自定义, 访问： http://10.20.88.120:4000
     bundle exec jekyll s -VH 10.20.88.120 -P 4000
+
 ```
 
 ### 2. 框架配置
@@ -100,7 +104,7 @@
 ├── Gemfile                   # 框架-依赖
 ├── CNAME                     # 框架-域名 Github用
 ├── _config.yml               # 框架-配置
-│             
+│
 ├── _data                     # 数据-通用数据
 │   └── links.yml             # 数据-友链
 ├── _posts                    # 数据-文章
@@ -118,7 +122,7 @@
 ## 变量
   {% assign t_variable = page.my_variable %}  # 声明
   {{ page.my_variable }}                      # 调用
-  
+
 ## 表达式
   {% include {{ page.my_variable }} %}
 
@@ -130,19 +134,19 @@
   {% if remain==0 and remain!=1 %}
   {% for post in site.posts limit: site.recent_posts_limit %}
   {% unless forloop.last %}&nbsp;{% endunless %}
-  
+
 ## 判断
   {% if page.my_variable %}
     {% include {{ page.my_variable }} %}
   {% else %}
     {% include {{ page }} %}
   {% endif %}
-  
+
 ## 循环
   {% for item in page.my_variable %}
     {% include {{ item }} %}
   {% endfor %}
-  
+
 ## 选择器
   # 详见: [Liquid选择器帮助文档](https://jekyllrb.com/docs/liquid/filters/)
   {{content}}

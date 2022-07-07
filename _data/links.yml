@@ -1,19 +1,9 @@
 # 模版
-# - type: WORD_5
-#   name: WORD_15
-#   link: WORD_X
-#   desc: WORD_17
+# - type: MAX_WORD_5
+#   name: MAX_WORD_15
+#   link: MAX_WORD_X
+#   desc: MAX_WORD_17
 
-- type: 博客
-  name: HyG Blog
-  link: https://github.com/Gaohaoyang/gaohaoyang.github.io
-  desc: 一个古典的Jekyll主题
-  
-- type: 博客
-  name: Hexo Search
-  link: https://github.com/androiddevelop/hexo-search
-  desc: 一个静态博客搜索插件
-  
 - type: 工具
   name: Code Beautify
   link: https://codebeautify.org/

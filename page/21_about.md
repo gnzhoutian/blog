@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于我
+title: About Me
 permalink: /about/
 comments: true
 ---
@@ -47,9 +47,11 @@ comments: true
 <hr>
 
 ## 友情链接
-{% if site.friends %}
-  {% for friend in site.friends %}
-    <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-  {% endfor %}
-{% endif %}
-
+<div>
+  {% if site.data.friends %}
+    {% for friend in site.data.friends %}
+      <a href="{{friend.link}}">{{friend.name}}</a><b> | </b>
+    {% endfor %}
+    <b>...</b>
+  {% endif %}
+</div>
