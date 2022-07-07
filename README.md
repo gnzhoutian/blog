@@ -192,3 +192,20 @@ C -->|Two| E[iPhone]
 C -->|Three| F[fa:fa-car Car]
 
 ```
+
+
+```flow
+st=>start: 开始
+end=>end: 结束
+op=>operation: 操作步骤
+cond=>condition: 是 或者 否?
+in=>inputoutput: asfdasd
+sub=>subroutine: haha
+# cond=>condition: yes or no?
+st->op()->cond
+cond(no,right)->sub->in(right)->op
+cond(yes)->end
+```
+
+
+
