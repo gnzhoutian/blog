@@ -181,3 +181,14 @@
 | 3    | [Jekyll](https://jekyllrb.com/docs/)                         | Jekyll官方帮助文档    |
 | 4    | [Code Beautify](https://codebeautify.org/)                   | 前端工具箱            |
 
+
+
+```mermaid
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]
+
+```
