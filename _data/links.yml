@@ -84,3 +84,8 @@
   link: https://nqdeng.github.io/7-days-nodejs
   desc: 七天学会NodeJS -Nanqiao Deng
 
+- type: 标准
+  name: Google 开源项目风格指南
+  link: https://zh-google-styleguide.readthedocs.io/en/latest/
+  desc: Google 开源项目风格指南——中文版
+  

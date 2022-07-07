@@ -40,7 +40,7 @@
     </script>
   {% endif %}
   
-  {% if page.mathjax and site.online %}
+  {% if page.mathjax or site.online %}
     <!-- Mathjax -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -53,4 +53,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   {% endif %}
   
+  {% if page.flowchart %}
+    <!-- Flowchart -->
+    <script src="{{ '/assets/vendor/flowchart/raphael.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/vendor/flowchart/flowchart.min.js' | relative_url }}"></script>
+  {% endif %}
+
 </head>

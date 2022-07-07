@@ -15,6 +15,16 @@
   desc: 一个静态博客搜索插件
 
 - type: 友链
+  name: 黄玄的博客
+  link: https://huangxuan.me/
+  desc: None
+
+- type: 友链
+  name: 码志
+  link: https://mazhuang.org/
+  desc: None
+  
+- type: 友链
   name: 羡辙杂俎
   link: http://zhangwenli.com/blog
   desc: None
@@ -98,3 +108,4 @@
   name: 华米兹之家
   link: http://zhaoyuxiang.cn
   desc: None
+

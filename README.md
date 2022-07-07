@@ -181,31 +181,3 @@
 | 3    | [Jekyll](https://jekyllrb.com/docs/)                         | Jekyll官方帮助文档    |
 | 4    | [Code Beautify](https://codebeautify.org/)                   | 前端工具箱            |
 
-
-
-```mermaid
-graph TD
-A[Christmas] -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[fa:fa-car Car]
-
-```
-
-
-```flow
-st=>start: 开始
-end=>end: 结束
-op=>operation: 操作步骤
-cond=>condition: 是 或者 否?
-in=>inputoutput: asfdasd
-sub=>subroutine: haha
-# cond=>condition: yes or no?
-st->op()->cond
-cond(no,right)->sub->in(right)->op
-cond(yes)->end
-```
-
-
-
