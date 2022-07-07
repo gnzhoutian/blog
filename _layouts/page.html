@@ -9,7 +9,7 @@ layout: default
     
     {{content}}
     
-    {% if page.comments %}{% include comments.html %}{% endif %}
+    {% if page.comments and site.online %}{% include comments.html %}{% endif %}
   </div>
   
   <button class="anchor"><i class="fa fa-anchor"></i></button>
@@ -20,7 +20,7 @@ layout: default
       <div class="side content">
         <div>Contents</div>
         <ul id="content-side" class="content-ul">
-          {% if page.comments %}<li><a href="#comments">Comments</a></li>{% endif %}
+          {% if page.comments and site.online %}<li><a href="#comments">Comments</a></li>{% endif %}
         </ul>
       </div>
     </div>
