@@ -11,7 +11,7 @@
 timezone: Asia/Shanghai
 encoding: utf-8
 future: true
-online: false  # 网页中关闭在线脚本
+online: true  # 网页中关闭在线脚本
 
 # ------------------------- #
 #      Site settings        #
