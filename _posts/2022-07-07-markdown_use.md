@@ -24,7 +24,7 @@ published: true
 
 
 
-## 常用语法
+## 1. 常用语法
 > 标题 `#` `##` `###` ... `######`
 
 > 文本 `*斜体*` `**粗体**` `***斜粗体***` `~~删除线~~` 
@@ -70,20 +70,31 @@ published: true
 > `MathJax` 为在线功能, 开启时会该模块会自动改为在线模式
 
 
-## 文本编辑器
+## 2. Typora编辑器
 
 > Typora 是目前比较好用的 `Markdown` 文本编辑器, 目前正式版需要付费
-> 
+>
 > `Beta` 版本仍然免费, 最新版本为 `v0.11.18` [点击下载](https://typora.io/windows/dev_release.html)
 
+### 1. 提示到期问题
+
 ```shell
-## Typora 快捷键使用说明  
+## Typora 提示到期问题
+  1. 打开注册表regedit -> 计算机\HKEY_CURRENT_USER\Software\Typora
+  2. 右键Typora -> 选择权限 -> 各个权限组权限改为拒绝
+  3. 关闭注册表 -> 重新打开typora即可
+```
+
+### 2. 快捷键使用说明
+
+```shell
+## Typora 快捷键使用说明
   ctrl + 0             #段落
   ctrl + 1,2,3,4,5,6   #标题级别
   ctrl + -,=           #升降标题级别
   ctrl + [,]           #增减缩进
   ctrl + shift + [,]   #有序无序列表
-  ctrl + b,i,u 			#加粗斜体下划线
+  ctrl + b,i,u         #加粗斜体下划线
 ```
 
 
@@ -98,4 +109,3 @@ published: true
 - [博客 Flowchart 用法](https://www.123si.org/javascript/article/markdown-flow-chart-flowchart-js/)
 - [博客 Mermaid 用法](http://blog.lisp4fun.com/2017/11/09/mermaid-flow)
 - [博客 MathJax 与 Markdown 的究极融合](https://yihui.org/cn/2017/04/mathjax-markdown/)
-
