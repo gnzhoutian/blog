@@ -162,6 +162,18 @@
 
 ```
 
+### 6. 调试主题
+
+```shell
+#!/bin/bash
+haha="base16.monokai github monokai.sublime"
+
+for item in ${haha}; do
+  echo ${item}
+  rougify style ${item} >_sass/_test.scss
+  read
+done 
+```
 
 
 ## 7. 致谢

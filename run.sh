@@ -12,5 +12,5 @@ fi
 
 rm -rf Gemfile.lock _site
 
-bundle exec jekyll s -VH 10.20.88.120
+bundle exec jekyll s -VH 10.20.88.122
 

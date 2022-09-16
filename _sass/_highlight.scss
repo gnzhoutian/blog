@@ -5,21 +5,21 @@
 .rouge-table {
   padding: none;
   margin: none;
-  background-color: #272822;
+  background-color: #4f4f4f;
   border: none;
 }
 
 .rouge-code {
   padding: 0px 0px;
   margin: none;
-  background-color: #272822;
+  background-color: #4f4f4f;
   border: none;
 }
 
 .rouge-gutter {
   padding: 0px 0px;
   margin: none;
-  background-color: #272822;
+  background-color: #4f4f4f;
   border: none;
 }
 
@@ -47,10 +47,10 @@ pre {
   /* Firefox 1.0-2.0 */
   white-space: pre-wrap;
   /* current browsers */
-  background-color: #272822;
+  background-color: #4f4f4f;
   border: none;
   
-  background: #272822;
+  background: #4f4f4f;
   
   >code {
     margin: 0;
@@ -58,7 +58,7 @@ pre {
     font-size: 13px;
     color: #d1d1c9;
     border: none;
-    background-color: #272822
+    background-color: #4f4f4f
   }
 }
 
@@ -66,7 +66,7 @@ pre {
 .highlight {
   border-radius: 3px;
 
-  background: #272822;
+  background: #4f4f4f;
   
   .hll { background: #282c34 }                                                // haha
   .c { color: #b7b3b3 } /* Comment */                                         // 02
