@@ -1,0 +1,140 @@
+---
+layout: default
+---
+
+<div class="page clearfix" index>
+    <div class="left">
+        <!-- Articles summary -->
+        <ul>
+            {% for post in paginator.posts %}
+            <li>
+                <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h3>
+                <div class="label">
+                    <div class="label-card">
+                        {% if post.mtime %}
+                            <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>{{ post.mtime | date_to_string | date: "%F" }}
+                        {% else %}
+                            <i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date | date: "%F" }}
+                        {% endif %}
+                    </div>
+
+                    {% assign show_realtime = true %}
+                    {% include categories.html %}
+                </div>
+                <div class="excerpt">
+                    {{ post.excerpt }}
+                </div>
+                <div class="read-all">
+                    <a href="{{ post.url | relative_url }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Read All</a>
+                </div>
+            </li>
+            <hr>
+            {% endfor %}
+        </ul>
+
+        <!-- Pagination links -->
+        <div class="pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ '/' | relative_url }}" class="previous"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                <a href="{{ paginator.previous_page_path | relative_url }}" class="previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+            {% else %}
+                <span class="previous disable"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+                <span class="previous disable"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+            {% endif %}
+            <span class="page_number">{{ paginator.page }}/{{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | relative_url }}" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <a href="{{ '/page' | append: paginator.total_pages | relative_url }}" class="next"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            {% else %}
+                <span class="next disable"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                <span class="next disable"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Recent Posts -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    {% for post in site.posts offset: 0 limit: site.recent_posts_limit %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Content Categories -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-th-list" aria-hidden="true"></i>Categories
+                </div>
+                <ul class="content-ul" cate>
+                    {% for category in site.categories %}
+                        <li>
+                            {% assign t_name = category | first %}
+                            {% assign t_size = category | last | size %}
+                            <a href="{{ site.navs.category.href | relative_url }}#{{ t_name }}" class="categories-list-item" cate="{{ t_name }}">
+                                <span class="name">{{ t_name }}</span>
+                                <span class="badge">{{ t_size }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Content Tags -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags" aria-hidden="true"></i>Tags
+                </div>
+                <div class="tags-cloud">
+                    {% assign first = site.tags.first %}
+                    {% assign max = first[1].size %}
+                    {% assign min = max %}
+
+                    {% for tag in site.tags offset:1 %}
+                        {% if tag[1].size > max %}
+                            {% assign max = tag[1].size %}
+                        {% elsif tag[1].size < min %}
+                            {% assign min=tag[1].size %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if max==min %}
+                        {% assign diff=1 %}
+                    {% else %}
+                        {% assign diff=max | minus: min %}
+                    {% endif %}
+
+                    {% for tag in site.tags %}
+                        {% assign temp=tag[1].size | minus: min | times: 36 | divided_by: diff %}
+                        {% assign base=temp | divided_by: 4 %}
+                        {% assign remain=temp | modulo: 4 %}
+
+                        {% if remain==0 %}
+                            {% assign size=base | plus: 9 %}
+                        {% elsif remain==1 or remain==2 %}
+                            {% assign size=base | plus: 9 | append: '.5' %}
+                        {% else %}
+                            {% assign size=base | plus: 10 %}
+                        {% endif %}
+
+                        {% if remain==0 or remain==1 %}
+                            {% assign color=9 | minus: base %}
+                        {% else %}
+                            {% assign color=8 | minus: base %}
+                        {% endif %}
+
+                        <a href="{{ site.navs.tag.href | relative_url }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

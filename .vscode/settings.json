@@ -1,0 +1,37 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        // useless
+        ".jekyll-metadata": true,
+        ".jekyll-cache": true,
+        ".sass-cache": true,
+        ".bundle": true,
+        "_site": true,
+        "vendor": true,
+        "Gemfile.lock": true,
+        // theme
+        "page": true,
+        "assets/": true,
+        "_sass/": true,
+        "_layouts/": true,
+        "_includes/": true,
+        // "_config.yml": true,
+        "index.html": true,
+        "LICENSE": true,
+        "Gemfile": true,
+        "CNAME": true,
+        "run.sh": true,
+        // data
+        ".vscode": false,
+        ".gitignore": false,
+        "README.md": false,
+        "_drafts": false,
+        "_data": false,
+        "_posts": false,
+    },
+}

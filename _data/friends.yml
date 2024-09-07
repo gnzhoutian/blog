@@ -1,0 +1,101 @@
+# 模版
+# - type: MAX_WORD_5
+#   name: MAX_WORD_15
+#   link: MAX_WORD_X
+#   desc: MAX_WORD_17
+
+- type: 友链
+  name: HyG Blog
+  link: https://gaohaoyang.github.io/
+  desc: 一个古典的Jekyll主题
+
+- type: 友链
+  name: 小胖轩
+  link: https://www.codeboy.me/
+  desc: 一个静态博客搜索插件
+
+- type: 友链
+  name: 黄玄的博客
+  link: https://huangxuan.me/
+  desc: None
+
+- type: 友链
+  name: 码志
+  link: https://mazhuang.org/
+  desc: None
+
+- type: 友链
+  name: 羡辙杂俎
+  link: http://zhangwenli.com/blog
+  desc: None
+
+- type: 友链
+  name: ZhiLi
+  link: http://lizhipower.github.io/
+  desc: None
+
+- type: 友链
+  name: awthink
+  link: http://awthink.net/
+  desc: None
+
+- type: 友链
+  name: Aralic
+  link: http://aralic.github.io/
+  desc: None
+
+- type: 友链
+  name: 薛彬XueBin
+  link: http://axuebin.com/blog/
+  desc: None
+
+- type: 友链
+  name: TBOOX
+  link: http://www.tboox.org/cn/
+  desc: None
+
+- type: 友链
+  name: Chaobin
+  link: http://zhchbin.github.io/
+  desc: None
+
+- type: 友链
+  name: 咀嚼之味
+  link: http://jerryzou.com/
+  desc: None
+
+- type: 友链
+  name: Xudifsd
+  link: http://xudifsd.org/blog/
+  desc: None
+
+- type: 友链
+  name: 高策
+  link: http://gaocegege.com/Blog/
+  desc: None
+
+- type: 友链
+  name: 前端小武
+  link: https://xuexb.com
+  desc: None
+
+- type: 友链
+  name: Gardenia
+  link: http://nanshu.wang/about/
+  desc: None
+
+- type: 友链
+  name: 龙雀
+  link: http://www.flygon.net
+  desc: None
+
+- type: 友链
+  name: 秦超
+  link: http://chinchao.xyz/
+  desc: None
+
+- type: 友链
+  name: 华米兹之家
+  link: http://zhaoyuxiang.cn
+  desc: None
+

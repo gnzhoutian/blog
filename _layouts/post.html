@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="page clearfix" post>
+    <div class="left">
+        <h1>{{page.title}}</h1>
+
+        <div class="label">
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
+            </div>
+
+            <div class="label-card">
+                {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}{% endif %}
+            </div>
+
+            <div class="label-card">
+                {% if page.mtime %}
+                <i class="fa fa-calendar-plus-o"></i>{{ page.mtime | date_to_string | date: "%F" }}
+                {% endif %}
+            </div>
+
+            <div class="label-card">
+                {% if page.version %}
+                <i class="fa fa-code-fork"></i>{{ page.version }}
+                {% endif %}
+            </div>
+            {% assign show_realtime = true %}
+            {% include categories.html %}
+        </div>
+
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+            {{content}}
+        </article>
+        <hr>
+
+        <div class="post-recent">
+            <div class="pre">
+                {% if page.previous %}
+                <p><strong>上一篇: </strong><a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a></p>
+                {% endif %}
+            </div>
+            <div class="nex">
+                {% if page.next %}
+                <p><strong>下一篇: </strong> <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a></p>
+                {% endif %}
+            </div>
+        </div>
+        {% if page.comments and site.online %}{% include comments.html %}{% endif %}
+    </div>
+
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+
+    <div class="right">
+        <div class="wrap">
+            <!-- Content -->
+            <div class="side content">
+                <div>Contents</div>
+                <ul id="content-side" class="content-ul">
+                    {% if page.comments and site.online %}<li><a href="#comments">Comments</a></li>{% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

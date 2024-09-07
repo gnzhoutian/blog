@@ -1,0 +1,133 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# ------------------------- #
+#      System settings      #
+# ------------------------- #
+timezone: Asia/Shanghai
+encoding: utf-8
+future: true  # 发布未来日期的帖子
+online: true  # 网页中关闭在线脚本
+
+# ------------------------- #
+#      Site settings        #
+# ------------------------- #
+title: Tian's Blog
+subtitle: 丢掉幻想，准备斗争！
+baseurl: ""  # 网站资源相对路径，如xxx.com/blog则填写/blog
+url: "https://gnzhoutian.github.io"  # 填写网站域名+端口
+
+# ------------------------- #
+#      Author settings      #
+# ------------------------- #
+author: Tian
+location: Hangzhou, China
+email: gnzhoutian@qq.com
+
+description: 在软件工程师的路上渐行渐远~~
+
+github_username: gnzhoutian
+github_reponame: gnzhoutian.github.io
+
+# ------------------------- #
+#      Build settings       #
+# ------------------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            default_lang: plaintext
+            line_numbers: false
+            bold_every: 5
+
+excerpt_separator: "\n\n\n\n"  # 文章摘要与正文的间隔符
+permalink: /:year/:month/:day/:title/
+
+sass:
+    style: compressed
+  
+exclude:
+    - vendor/
+    - README.md
+    - Gemfile
+    - Gemfile.lock
+    - run.sh
+
+include:
+    - _assets
+
+# ------------------------- #
+#      Plugin settings      #
+# ------------------------- #
+plugins:
+    - jekyll-paginate
+    - jemoji
+
+paginate: 10
+recent_posts_limit: 10
+
+# ------------------------- #
+#      Tools settings       #
+# ------------------------- #
+## 第三方在线组件
+disqus_shortname: gnzhoutian  # 评论系统
+baidu_tongji_id: 2ee05823fccb71a4e5dd99d9d73203e8 # 百度统计
+google_analytics_id: G-84JEL35P3W  # google分析
+
+# 订阅支持
+rss_feed: /feed.xml
+
+# Search 
+db_search: /db_search.json
+
+# ------------------------- #
+#    Navigation settings    #
+# ------------------------- #
+navs:
+    home:
+        enable: true
+        href: /
+        icon: home
+        title: 首页
+
+    archive:
+        enable: true
+        href: archive/
+        icon: archive
+        title: 归档
+
+    category:
+        enable: true
+        href: category/
+        icon: th-list
+        title: 分类
+
+    tag:
+        enable: true
+        href: tag/
+        icon: tags
+        title: 标签
+
+    collection:
+        enable: true
+        href: collection/
+        icon: bookmark
+        title: 收藏
+
+    todo:
+        enable: true
+        href: todo/
+        icon: play
+        title: 代办
+
+    about:
+        enable: true
+        href: about/
+        icon: heart
+        title: 关于

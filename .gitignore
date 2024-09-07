@@ -1,0 +1,10 @@
+.idea
+.CVS
+.DS_Store
+.jekyll-metadata
+.jekyll-cache
+.sass-cache
+.bundle
+_site
+Gemfile.lock
+/vendor

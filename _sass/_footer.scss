@@ -1,0 +1,222 @@
+.site_footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    background-color: #2b2b2b;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+    color: #9d9d9d;
+
+    .wrapper {
+        width: 1140px;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 16px;
+
+        p {
+            margin: 0;
+            line-height: 1.4;
+
+        }
+
+        .contact {
+            display: inline-block;
+
+            a {
+                color: #ccc;
+                transition: 0.3s ease;
+
+                &:hover {
+                    color: #fff;
+                }
+                i {
+                    margin: 0 5px;
+                }
+            }
+            img {
+                height: 14px;
+            }
+        }
+
+        .power {
+            font-size: 12px;
+
+            a {
+                color: #8F90C5;
+                transition: 0.3s ease;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.back_to_top {
+    position: fixed;
+    right: 5%;
+    bottom: 64px;
+    background-color: #9d9d9d;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+
+    a {
+        display: block;
+        background-color: #f8f8fd;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+    }
+}
+
+.back_to_top_show {
+    visibility: visible;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1
+    }
+}
+
+.cb_search_tool {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    background-color: #111111;
+    display: none;
+
+    .cb_search_content {
+        position: fixed;
+        text-align: left;
+        left: 25%;
+        right: 25%;
+        top: 15%;
+        height: 50px;
+        font-size: 24px;
+        background-color: #eee;
+        color: black;
+        opacity: 1.0;
+    }
+
+    .cb_close_btn {
+        display: block;
+        position: fixed;
+        top: 15%;
+        right: 25%;
+        width: 50px;
+        height: 50px;
+        padding: 5px 5px;
+        color: #9d9d9d;
+        text-align: center;
+        font-size: 36px;
+        transition: 0.2s;
+
+        &:hover {
+            color: #2b2b2b;
+        }
+    }
+
+    ul {
+        position: fixed;
+        left: 25%;
+        right: 25%;
+        top: 15%;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 15px 0 15px;
+        // margin-top: -1px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        list-style-type: none;
+        background-color: #eee;
+
+        :link {
+            color: #2b2b2b;
+        }
+        :hover {
+            background-color: #9d9d9d;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width: 840px) {
+    .site_footer {
+        .wrapper {
+            max-width: 95%;
+        }
+    }
+
+    .back_to_top {
+        left: 95.5%;
+
+        a {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .cb_search_tool {
+        .cb_search_content {
+            left: 15%;
+            right: 15%;
+        }
+        .cb_close_btn {
+            right: 15%;
+        }
+        ul {
+            left: 15%;
+            right: 15%;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .site_footer {
+        .wrapper {
+            max-width: 95%;
+        }
+    }
+
+    .back_to_top {
+        right: 2.5%;
+        bottom: 80px;
+
+        a {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .cb_search_tool {
+        .cb_search_content {
+            left: 5%;
+            right: 5%;
+        }
+        .cb_close_btn {
+            right: 5%;
+        }
+        ul {
+            left: 5%;
+            right: 5%;
+        }
+    }
+}

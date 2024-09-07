@@ -1,0 +1,109 @@
+#markdown-toc {
+    display: none;
+}
+
+.page[post] {
+    .label {
+        margin-top: 16px;
+        overflow: hidden;
+
+        .label-card {
+            float: left;
+            margin-right: 15px;
+
+            .point {
+                padding: 0 10px;
+                color: #9d9d9d;
+            }
+            i {
+                padding-right: 5px;
+                color: #6b6a6a;
+            }
+            .categories {
+                padding: 0 5px;
+
+                i { color: #9e9d9d; }
+                a {
+                    padding: 0 5px;
+                    background-color: #9e9d9d;
+                    color: #fff;
+                    font-size: 90%;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        background-color: #b6b6b9;
+                    }
+                }
+            }
+
+            .page_tags {
+                i {
+                    color: #c6cbe9;
+                }
+                a {
+
+                    // border: 1px solid #aaa;
+                    padding: 0 5px;
+                    background-color: #c6cbe9;
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 90%;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        background-color: #c0ddc7;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        color: #4d6dad;
+        transition: 0.5s ease;
+
+        &:hover {
+            color: #223253;
+            background-color: #f4efeb;
+        }
+    }
+
+    .left {
+        ul {
+            >h2 {
+                color: #333;
+            }
+            li {
+                color: #333;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .page[post] {
+        .left {
+            font-size: 16px;
+
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 17px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+        }
+    }
+}

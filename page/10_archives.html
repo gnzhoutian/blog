@@ -1,0 +1,51 @@
+---
+layout: default
+title: Archives
+permalink: /archive/
+---
+
+<div class="page clearfix">
+  <div class="left">
+    <h1>{{page.title}}</h1>
+    <hr>
+    <ul>
+      {% assign t_year = '' %}
+      {% for post in site.posts %}
+      {% assign year = post.date | date: '%Y' %}
+      {% if year != t_year %}
+      {% assign t_year = year %}
+      <h2 id="y{{ year }}">{{ year }}</h2>
+      {% endif %}
+      <li>
+        <time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>
+        <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        
+        {% include categories.html %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+  <button class="anchor"><i class="fa fa-anchor"></i></button>
+  
+  <div class="right">
+    <div class="wrap">
+      <!-- Contents -->
+      <div class="side content">
+        <div>Contents</div>
+        <ul id="content-side" class="content-ul">
+          {% assign t_num = 0 %}
+          {% for post in site.posts %}
+          {% assign p_year = post.previous.date | date: "%Y" %}
+          {% assign year = post.date | date: "%Y" %}
+          {% assign t_num = t_num | plus: 1 %}
+          {% if p_year != year %}
+          <li><a data-scroll href="#y{{ year }}">{{ year }} ({{ t_num }})</a></li>
+          {% assign t_num = 0 %}
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

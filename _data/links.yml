@@ -1,0 +1,85 @@
+# 模版
+# - type: MAX_WORD_5
+#   name: MAX_WORD_15
+#   link: MAX_WORD_X
+#   desc: MAX_WORD_17
+
+- type: 工具
+  name: Code Beautify
+  link: https://codebeautify.org/
+  desc: 前端工具箱
+
+- type: 官网
+  name: Jekyll
+  link: https://jekyllrb.com/docs/
+  desc: Jekyll官方帮助文档
+
+- type: 官网
+  name: Liquid
+  link: https://jekyllrb.com/docs/liquid/filters/
+  desc: Liquid选择器帮助文档
+
+- type: 工具
+  name: Font Awesome
+  link: https://www.bootcss.com/p/font-awesome/
+  desc: 相对通用的字体
+
+- type: 工具
+  name: tiny png
+  link: https://tinypng.com/
+  desc: 用于压缩 png 或 jpg 的在线工具
+
+- type: 工具
+  name: 在线正则表达式匹配
+  link: https://regex101.com/
+  desc: 这个功能更强大一点，能清楚的区分出贪婪和懒惰正则。
+
+- type: 工具
+  name: JavaScript 标准参考教程
+  link: http://javascript.ruanyifeng.com/
+  desc: JavaScript 标准参考教程（alpha） -阮一峰
+
+- type: 前端
+  name: You Don't Need jQuery
+  link: https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md
+  desc: 浏览器原生API替代jQuery API方法
+
+- type: 前端
+  name: 30分钟掌握ES6/ES2015核心内容（上）
+  link: http://segmentfault.com/a/1190000004365693
+  desc: 30分钟掌握ES6/ES2015核心内容（上）
+
+- type: 前端
+  name: 30分钟掌握ES6/ES2015核心内容（下）
+  link: http://segmentfault.com/a/1190000004368132
+  desc: 30分钟掌握ES6/ES2015核心内容（下）
+
+- type: 前端
+  name: 《ECMAScript 6入门》 -阮一峰
+  link: https://github.com/ruanyf/es6tutorial
+  desc: 《ECMAScript 6入门》 -阮一峰
+
+- type: 前端
+  name: EcmaScript6 全规范（含node） -ouvens
+  link: https://github.com/ouvens/es6-code-style-guide
+  desc: EcmaScript6 全规范（含node） -ouvens
+
+- type: 前端
+  name: 七天学会NodeJS -Nanqiao Deng
+  link: https://nqdeng.github.io/7-days-nodejs
+  desc: 七天学会NodeJS -Nanqiao Deng
+
+- type: 标准
+  name: Google 开源项目风格指南
+  link: https://zh-google-styleguide.readthedocs.io/en/latest/
+  desc: Google 开源项目风格指南——中文版
+
+- type: 工具
+  name: 正则表达式在线测试
+  link: https://www.jyshare.com/front-end/854/
+  desc: 菜鸟正则，这个用法简单一些
+  
+- type: 工具
+  name: 夏小沫的AI小站
+  link: https://fb.qqslyx.com/
+  desc: 易用免费的AI工具箱
