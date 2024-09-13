@@ -25,6 +25,11 @@
   desc: 相对通用的字体
 
 - type: 工具
+  name: yesicon
+  link: https://yesicon.app/
+  desc: 232,765枚开源、免费的矢量图标库
+
+- type: 工具
   name: tiny png
   link: https://tinypng.com/
   desc: 用于压缩 png 或 jpg 的在线工具

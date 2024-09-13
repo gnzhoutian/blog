@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 permalink: /about/
-comments: true
+comments: false
 ---
 
 * content
@@ -17,30 +17,30 @@ comments: true
 
 ## 联系我
 <div>
-  {% if site.github_username %}
+    {% if site.github_username -%}
     <a target="_blank" href="//github.com/{{ site.github_username }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
     </a>
-  {% endif %}
-  {% if site.email %}
+    {%- endif %}
+    {% if site.email -%}
     <a target="_blank" href="mailto:{{ site.email }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-      </span>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+        </span>
     </a>
-  {% endif %}
-  {% if site.rss_feed %}
+    {%- endif %}
+    {% if site.rss_feed -%}
     <a target="_blank" href="{{ site.rss_feed | relative_url }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
     </a>
-  {% endif %}
+    {%- endif %}
 </div>
 
 
@@ -48,10 +48,10 @@ comments: true
 
 ## 友链
 <div>
-  {% if site.data.friends %}
-    {% for friend in site.data.friends %}
-      <a href="{{friend.link}}">{{friend.name}}</a><b> | </b>
+    {% if site.data.friends -%}
+    {% for friend in site.data.friends -%}
+    <a href="{{friend.link}}">{{friend.name}}</a><b> | </b>
     {% endfor %}
     <b>...</b>
-  {% endif %}
+    {%- endif %}
 </div>

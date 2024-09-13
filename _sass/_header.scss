@@ -7,7 +7,7 @@
     background: #2b2b2b;
     height: 48px;
     color: #9d9d9d;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 2px #00000080;
     margin-bottom: 20px;
 
     a {
@@ -162,7 +162,7 @@
                 ul {
                     background: #222;
                     border-radius: 0 0 4px 4px;
-                    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 3px 4px 1px #00000080;
                     line-height: 36px;
 
                     li {

@@ -1,34 +1,34 @@
 <footer class="site_footer">
     <div class="wrapper">
-
         <p class="contact">
             <i class="fa fa-eye"><var class="num"><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></var></i>
             <i class="fa fa-users"><var class="num"><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></var></i>
             <i class="fa fa-book"><var class="num"><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span></var></i>
 
-            {% if site.email %}
-                <a href="mailto:{{site.email}}" title="Email"><i class="fa fa-envelope-o"></i></a>
-            {% endif %}
-            {% if site.rss_feed %}
-                <a href="{{ site.rss_feed | relative_url }}" title="RSS"><i class="fa fa-rss"></i></a>
-            {% endif %}
+            {% if site.email -%}
+            <a href="mailto:{{site.email}}" title="Email"><i class="fa fa-envelope-o"></i></a>
+            {%- endif %}
+            {% if site.rss_feed -%}
+            <a href="{{ site.rss_feed | relative_url }}" title="RSS"><i class="fa fa-rss"></i></a>
+            {%- endif %}
 
-            {% if site.online %}
+            {% if site.online -%}
             <a href="//raw.githubusercontent.com/{{ site.github_username }}/{{ site.github_reponame }}/main/LICENSE">
                 <img src="//img.shields.io/badge/license-MIT-blue.svg">
             </a>
             <a href="//github.com/{{ site.github_username }}/{{ site.github_reponame }}">
                 <img src="//img.shields.io/github/stars/{{ site.github_username }}/{{ site.github_reponame }}.svg">
             </a>
-            {% endif %}
+            {%- endif %}
         </p>
+
         <p class="power copyright text-muted">
             <span> Copyright &copy; {{ site.time | date: '%Y' }} <a href="//github.com/{{ site.github_username }}">{{ site.author }}</a></span>
             &nbsp;<i class="fa fa-heart"></i>&nbsp;
             <span>Theme designed by <a href="//github.com/Gaohaoyang">HyG</a></span>
             &nbsp;<i class="fa fa-heart"></i>&nbsp;
             <span>Powered by <a href="//jekyllrb.com/">Jekyll</a> & <a href="//pages.github.com/">Github Pages</a></span>
-        <p>
+        </p>
     </div>
 </footer>
 
@@ -49,12 +49,9 @@
 <script src="{{ '/assets/js/page_contents.js' | relative_url }}" charset="utf-8"></script>
 
 <!-- Plugin: website statistics -->
-{% if site.online %}
+{% if site.online -%}
 <script async src="{{ '/assets/vendor/busuanzi/busuanzi.pure.mini.js' | relative_url }}"></script>
-{% endif %}
-
-<!-- Plugin: click special effects -->
-<!-- <script type="text/javascript" src="{{ '/assets/vendor/love/love.min.js' | relative_url }}"></script> -->
+{%- endif %}
 
 <!-- Plugin: Search -->
 <script src="{{ '/assets/vendor/jquery/jquery.min.js' | relative_url }}"></script>
@@ -63,6 +60,6 @@
 <script src="{{ '/assets/js/db_search.js' | relative_url }}"></script>
 
 <div class="cb_search_tool">
-        <input type="text" class="cb_search_content" placeholder="文章标题 类别 标签" autocomplete="off">
-        <a class="cb_close_btn" title="关闭"> <i class="fa fa-close"></i></a>
+    <input type="text" class="cb_search_content" placeholder="文章标题 类别 标签" autocomplete="off">
+    <a class="cb_close_btn" title="关闭"> <i class="fa fa-close"></i></a>
 </div>

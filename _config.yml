@@ -76,7 +76,8 @@ recent_posts_limit: 10
 #      Tools settings       #
 # ------------------------- #
 ## 第三方在线组件
-disqus_shortname: gnzhoutian  # 评论系统
+giscus_enable: true  # 开启giscus评论系统，需要在_includes/comments.html中自定义配置
+disqus_shortname:  # gnzhoutian  # Disqus评论系统
 baidu_tongji_id: 2ee05823fccb71a4e5dd99d9d73203e8 # 百度统计
 google_analytics_id: G-84JEL35P3W  # google分析
 

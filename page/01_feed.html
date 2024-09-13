@@ -5,36 +5,35 @@ permalink: /feed.xml
 
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ page.url | absolute_url }}</link>
-    <atom:link href="{{ site.rss_feed | absolute_url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.mtime | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    
-    {% for post in site.posts limit: site.recent_posts_limit %}
-    <item>
-      <title>{{ post.title | xml_escape }}</title>
-      <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape }}</description>
-      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      
-      {% if post.mtime %}
-      <lastBuildDate>{{ post.mtime | date_to_rfc822 }}</lastBuildDate>
-      {% endif %}
-      
-      <link>{{ post.url |absolute_url }}</link>
-      <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-      
-      {% for cat in post.categories %}
-      <category>{{ cat | xml_escape }}</category>
-      {% endfor %}
-      
-      {% for tag in post.tags %}
-      <category>{{ tag | xml_escape }}</category>
-      {% endfor %}
-    </item>
-    {% endfor %}
-  </channel>
+    <channel>
+        <title>{{ site.title | xml_escape }}</title>
+        <description>{{ site.description | xml_escape }}</description>
+        <link>{{ page.url | absolute_url }}</link>
+        <atom:link href="{{ site.rss_feed | absolute_url }}" rel="self" type="application/rss+xml"/>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        <lastBuildDate>{{ site.mtime | date_to_rfc822 }}</lastBuildDate>
+        <generator>Jekyll v{{ jekyll.version }}</generator>
+
+        {% for post in site.posts limit: site.recent_posts_limit -%}
+        <item>
+            <title>{{ post.title | xml_escape -}}</title>
+            <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape -}}</description>
+            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+            {% if post.mtime -%}
+            <lastBuildDate>{{ post.mtime | date_to_rfc822 }}</lastBuildDate>
+            {%- endif %}
+
+            <link>{{ post.url | absolute_url }}</link>
+            <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+
+            {%- for cat in post.categories %}
+            <category>{{ cat | xml_escape }}</category>
+            {%- endfor %}
+
+            {%- for tag in post.tags %}
+            <category>{{ tag | xml_escape }}</category>
+            {%- endfor %}
+        </item>
+        {%- endfor %}
+    </channel>
 </rss>

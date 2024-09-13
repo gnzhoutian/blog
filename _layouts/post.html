@@ -11,22 +11,25 @@ layout: default
                 <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
             </div>
 
+            {% if page.author -%}
             <div class="label-card">
-                {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}{% endif %}
+                <i class="fa fa-user"></i>{{ page.author }}
             </div>
+            {%- endif %}
 
+            {% if page.mtime -%}
             <div class="label-card">
-                {% if page.mtime %}
                 <i class="fa fa-calendar-plus-o"></i>{{ page.mtime | date_to_string | date: "%F" }}
-                {% endif %}
             </div>
+            {%- endif %}
 
+            {% if page.version -%}
             <div class="label-card">
-                {% if page.version %}
                 <i class="fa fa-code-fork"></i>{{ page.version }}
-                {% endif %}
             </div>
-            {% assign show_realtime = true %}
+            {%- endif %}
+
+            {% assign show_realtime = true -%}
             {% include categories.html %}
         </div>
 
@@ -38,17 +41,19 @@ layout: default
 
         <div class="post-recent">
             <div class="pre">
-                {% if page.previous %}
+                {% if page.previous -%}
                 <p><strong>上一篇: </strong><a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a></p>
-                {% endif %}
+                {%- endif %}
             </div>
             <div class="nex">
-                {% if page.next %}
+                {% if page.next -%}
                 <p><strong>下一篇: </strong> <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a></p>
-                {% endif %}
+                {%- endif %}
             </div>
         </div>
-        {% if page.comments and site.online %}{% include comments.html %}{% endif %}
+        {% if page.comments and site.online -%}
+        {% include comments.html %}
+        {%- endif %}
     </div>
 
     <button class="anchor"><i class="fa fa-anchor"></i></button>
@@ -59,7 +64,9 @@ layout: default
             <div class="side content">
                 <div>Contents</div>
                 <ul id="content-side" class="content-ul">
-                    {% if page.comments and site.online %}<li><a href="#comments">Comments</a></li>{% endif %}
+                    {% if page.comments and site.online -%}
+                    <li><a href="#comments">Comments</a></li>
+                    {%- endif %}
                 </ul>
             </div>
         </div>
