@@ -3,16 +3,34 @@ layout: page
 title: Todo List
 permalink: /todo/
 published: true
-comments: true
+comments: false
 ---
 
 * content
 {:toc}
 
 
+
+## TODO
+
+- [ ] N/A
+
 ## 2024Q3
 
-- [ ] 2024-09-07 - 重头再来
+- [x] 2024-09-13 - **功能调整**: 统一字体：`Consolas`+`Helvetica Neue`+`Microsoft YaHei`
+- [x] 2024-09-13 - 新增文章: git-rebase简明用法
+- [x] 2024-09-12 - 新增文章: tincVPN简明用法
+- [x] 2024-09-12 - **功能调整**: 行内代码块颜色改为红色
+- [x] 2024-09-12 - 新增文章: Docker简明用法
+- [x] 2024-09-12 - **缺陷修复**: 修复搜索条目跳转失败问题
+- [x] 2024-09-11 - 新增文章: Linux环境初始化
+- [x] 2024-09-11 - 新增文章: Liquid简明用法
+- [x] 2024-09-11 - 新增文章: Jekyll简明用法
+- [x] 2024-09-10 - 新增文章: Markdown简明用法
+- [x] 2024-09-10 - **功能调整**: 调整`Markdown`渲染样式
+- [x] 2024-09-09 - **功能调整**: 调整`Liquid`代码生成样式，去除多余空白行
+- [x] 2024-09-08 - **功能调整**: 评论系统从`Disqus`切换为`giscus`
+- [x] 2024-09-07 - 重头再来
 
 ## 2022Q2
 

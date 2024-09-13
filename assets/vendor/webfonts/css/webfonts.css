@@ -1,0 +1,10 @@
+/* 自定义Web字体, 英文正文Helvetica, 英文代码Consolas, 中文微软雅黑 */
+@font-face {
+    font-family: "Consolas Web";
+    src: url("../fonts/Consolas.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Helvetica Neue Web";
+    src: url("../fonts/Helvetica-Neue.woff2") format("woff2");
+}
