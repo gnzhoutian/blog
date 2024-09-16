@@ -17,6 +17,8 @@ comments: false
 
 ## 2024Q3
 
+- [x] 2024-09-16 - 新增文章: 利用LaTex生成技术简历
+- [x] 2024-09-14 - 新增文章: 字体选型及概念说明
 - [x] 2024-09-13 - **功能调整**: 统一字体：`Consolas`+`Helvetica Neue`+`Microsoft YaHei`
 - [x] 2024-09-13 - 新增文章: git-rebase简明用法
 - [x] 2024-09-12 - 新增文章: tincVPN简明用法
